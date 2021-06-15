@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot rpa="false" generated="20210609 15:48:27.577" generator="Robot 3.2.2 (Python 2.7.18 on win32)">
+<suite source="C:\Users\User\Desktop\workspace\eclipse\RobotProject1" id="s1" name="RobotProject1">
+<suite source="C:\Users\User\Desktop\workspace\eclipse\RobotProject1\test" id="s1-s1" name="Test">
+<suite source="C:\Users\User\Desktop\workspace\eclipse\RobotProject1\test\TestSuite1.robot" id="s1-s1-s1" name="TestSuite1">
+<test id="s1-s1-s1-t1" name="MyfirstTest">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>hello world</arg>
+</arguments>
+<msg timestamp="20210609 15:48:30.414" level="INFO">hello world</msg>
+<status status="PASS" endtime="20210609 15:48:30.414" starttime="20210609 15:48:30.407"></status>
+</kw>
+<status status="PASS" endtime="20210609 15:48:30.415" critical="yes" starttime="20210609 15:48:30.406"></status>
+</test>
+<test id="s1-s1-s1-t2" name="FirstTestSelinuim">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>https://google.com/</arg>
+<arg>chrome</arg>
+</arguments>
+<msg timestamp="20210609 15:48:30.420" level="INFO">Opening browser 'chrome' to base url 'https://google.com/'.</msg>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20210609 15:48:34.401" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<status status="PASS" endtime="20210609 15:48:34.402" starttime="20210609 15:48:34.398"></status>
+</kw>
+<msg timestamp="20210609 15:48:34.413" level="FAIL">SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 88
+Current browser version is 91.0.4472.77 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+</msg>
+<status status="FAIL" endtime="20210609 15:48:34.414" starttime="20210609 15:48:30.419"></status>
+</kw>
+<status status="FAIL" endtime="20210609 15:48:34.417" critical="yes" starttime="20210609 15:48:30.417">SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 88
+Current browser version is 91.0.4472.77 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+</status>
+</test>
+<test id="s1-s1-s1-t3" name="Samplelogintest">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>https://opensource-demo.orangehrmlive.com/</arg>
+<arg>chrome</arg>
+</arguments>
+<msg timestamp="20210609 15:48:34.427" level="INFO">Opening browser 'chrome' to base url 'https://opensource-demo.orangehrmlive.com/'.</msg>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20210609 15:48:38.179" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<status status="PASS" endtime="20210609 15:48:38.180" starttime="20210609 15:48:38.174"></status>
+</kw>
+<msg timestamp="20210609 15:48:38.190" level="FAIL">SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 88
+Current browser version is 91.0.4472.77 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+</msg>
+<status status="FAIL" endtime="20210609 15:48:38.191" starttime="20210609 15:48:34.425"></status>
+</kw>
+<doc>this a simple login test</doc>
+<status status="FAIL" endtime="20210609 15:48:38.194" critical="yes" starttime="20210609 15:48:34.421">SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 88
+Current browser version is 91.0.4472.77 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+</status>
+</test>
+<status status="FAIL" endtime="20210609 15:48:38.200" starttime="20210609 15:48:27.791"></status>
+</suite>
+<status status="FAIL" endtime="20210609 15:48:38.217" starttime="20210609 15:48:27.783"></status>
+</suite>
+<status status="FAIL" endtime="20210609 15:48:38.233" starttime="20210609 15:48:27.731"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="2" pass="1">Critical Tests</stat>
+<stat fail="2" pass="1">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="2" id="s1" name="RobotProject1" pass="1">RobotProject1</stat>
+<stat fail="2" id="s1-s1" name="Test" pass="1">RobotProject1.Test</stat>
+<stat fail="2" id="s1-s1-s1" name="TestSuite1" pass="1">RobotProject1.Test.TestSuite1</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
