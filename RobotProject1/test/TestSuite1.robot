@@ -24,5 +24,6 @@ Samplelogintest
      Input Text    id=searchSystemUser_userName    test 
      Click Element    id=searchSystemUser_userType    
      Click Button    id=searchBtn   
-     Log    test completed      
+     Log    test completed 
+     Log    comit         
             
