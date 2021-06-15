@@ -25,5 +25,5 @@ Samplelogintest
      Click Element    id=searchSystemUser_userType    
      Click Button    id=searchBtn   
      Log    test completed 
-     Log    comit         
+     Log    comitg         
             
