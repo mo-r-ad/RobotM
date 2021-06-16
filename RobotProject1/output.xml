@@ -1,81 +1,263 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot rpa="false" generated="20210609 15:48:27.577" generator="Robot 3.2.2 (Python 2.7.18 on win32)">
-<suite source="C:\Users\User\Desktop\workspace\eclipse\RobotProject1" id="s1" name="RobotProject1">
-<suite source="C:\Users\User\Desktop\workspace\eclipse\RobotProject1\test" id="s1-s1" name="Test">
-<suite source="C:\Users\User\Desktop\workspace\eclipse\RobotProject1\test\TestSuite1.robot" id="s1-s1-s1" name="TestSuite1">
-<test id="s1-s1-s1-t1" name="MyfirstTest">
+<robot rpa="false" generated="20210616 21:59:24.065" generator="Robot 3.2.2 (Python 2.7.18 on win32)">
+<suite source="C:\Users\User\git\RobotM\RobotProject1" id="s1" name="RobotProject1">
+<suite source="C:\Users\User\git\RobotM\RobotProject1\ebay" id="s1-s1" name="Ebay">
+<suite source="C:\Users\User\git\RobotM\RobotProject1\ebay\rbay.robot" id="s1-s1-s1" name="Rbay">
+<kw type="setup" name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>I am inside Test Suite Setup</arg>
+</arguments>
+<msg timestamp="20210616 21:59:24.623" level="INFO">I am inside Test Suite Setup</msg>
+<status status="PASS" endtime="20210616 21:59:24.624" starttime="20210616 21:59:24.623"></status>
+</kw>
+<test id="s1-s1-s1-t1" name="MyFirstTest">
+<kw type="setup" name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>I am inside Test Setup</arg>
+</arguments>
+<msg timestamp="20210616 21:59:24.628" level="INFO">I am inside Test Setup</msg>
+<status status="PASS" endtime="20210616 21:59:24.629" starttime="20210616 21:59:24.627"></status>
+</kw>
 <kw name="Log" library="BuiltIn">
 <doc>Logs the given message with the given level.</doc>
 <arguments>
-<arg>hello world</arg>
+<arg>Hello World...</arg>
 </arguments>
-<msg timestamp="20210609 15:48:30.414" level="INFO">hello world</msg>
-<status status="PASS" endtime="20210609 15:48:30.414" starttime="20210609 15:48:30.407"></status>
+<msg timestamp="20210616 21:59:24.632" level="INFO">Hello World...</msg>
+<status status="PASS" endtime="20210616 21:59:24.633" starttime="20210616 21:59:24.631"></status>
 </kw>
-<status status="PASS" endtime="20210609 15:48:30.415" critical="yes" starttime="20210609 15:48:30.406"></status>
+<kw type="teardown" name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>I am inside Test Teardown</arg>
+</arguments>
+<msg timestamp="20210616 21:59:24.635" level="INFO">I am inside Test Teardown</msg>
+<status status="PASS" endtime="20210616 21:59:24.636" starttime="20210616 21:59:24.634"></status>
+</kw>
+<tags>
+<tag>smoke</tag>
+</tags>
+<status status="PASS" endtime="20210616 21:59:24.637" critical="yes" starttime="20210616 21:59:24.624"></status>
 </test>
-<test id="s1-s1-s1-t2" name="FirstTestSelinuim">
+<test id="s1-s1-s1-t2" name="MySecondTest">
+<kw type="setup" name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>I am inside Test Setup</arg>
+</arguments>
+<msg timestamp="20210616 21:59:24.640" level="INFO">I am inside Test Setup</msg>
+<status status="PASS" endtime="20210616 21:59:24.641" starttime="20210616 21:59:24.640"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>I am inside 2nd test</arg>
+</arguments>
+<msg timestamp="20210616 21:59:24.644" level="INFO">I am inside 2nd test</msg>
+<status status="PASS" endtime="20210616 21:59:24.645" starttime="20210616 21:59:24.643"></status>
+</kw>
+<kw name="Set Tags" library="BuiltIn">
+<doc>Adds given ``tags`` for the current test or all tests in a suite.</doc>
+<arguments>
+<arg>regression1</arg>
+</arguments>
+<msg timestamp="20210616 21:59:24.648" level="INFO">Set tag 'regression1'.</msg>
+<status status="PASS" endtime="20210616 21:59:24.649" starttime="20210616 21:59:24.646"></status>
+</kw>
+<kw name="Remove Tags" library="BuiltIn">
+<doc>Removes given ``tags`` from the current test or all tests in a suite.</doc>
+<arguments>
+<arg>regression1</arg>
+</arguments>
+<msg timestamp="20210616 21:59:24.653" level="INFO">Removed tag 'regression1'.</msg>
+<status status="PASS" endtime="20210616 21:59:24.653" starttime="20210616 21:59:24.650"></status>
+</kw>
+<kw type="teardown" name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>I am inside Test Teardown</arg>
+</arguments>
+<msg timestamp="20210616 21:59:24.655" level="INFO">I am inside Test Teardown</msg>
+<status status="PASS" endtime="20210616 21:59:24.656" starttime="20210616 21:59:24.654"></status>
+</kw>
+<tags>
+<tag>example</tag>
+</tags>
+<status status="PASS" endtime="20210616 21:59:24.657" critical="yes" starttime="20210616 21:59:24.638"></status>
+</test>
+<test id="s1-s1-s1-t3" name="MyThirdTest">
+<kw type="setup" name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>I am inside Test Setup</arg>
+</arguments>
+<msg timestamp="20210616 21:59:24.660" level="INFO">I am inside Test Setup</msg>
+<status status="PASS" endtime="20210616 21:59:24.660" starttime="20210616 21:59:24.659"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>I am inside 3rd test</arg>
+</arguments>
+<msg timestamp="20210616 21:59:24.661" level="INFO">I am inside 3rd test</msg>
+<status status="PASS" endtime="20210616 21:59:24.662" starttime="20210616 21:59:24.661"></status>
+</kw>
+<kw type="teardown" name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>I am inside Test Teardown</arg>
+</arguments>
+<msg timestamp="20210616 21:59:24.663" level="INFO">I am inside Test Teardown</msg>
+<status status="PASS" endtime="20210616 21:59:24.664" starttime="20210616 21:59:24.662"></status>
+</kw>
+<tags>
+<tag>sanity</tag>
+</tags>
+<status status="PASS" endtime="20210616 21:59:24.665" critical="yes" starttime="20210616 21:59:24.658"></status>
+</test>
+<test id="s1-s1-s1-t4" name="MyFourthTest">
+<kw type="setup" name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>I am inside Test Setup</arg>
+</arguments>
+<msg timestamp="20210616 21:59:24.671" level="INFO">I am inside Test Setup</msg>
+<status status="PASS" endtime="20210616 21:59:24.672" starttime="20210616 21:59:24.668"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>I am inside 4th test</arg>
+</arguments>
+<msg timestamp="20210616 21:59:24.678" level="INFO">I am inside 4th test</msg>
+<status status="PASS" endtime="20210616 21:59:24.679" starttime="20210616 21:59:24.676"></status>
+</kw>
+<kw type="teardown" name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>I am inside Test Teardown</arg>
+</arguments>
+<msg timestamp="20210616 21:59:24.680" level="INFO">I am inside Test Teardown</msg>
+<status status="PASS" endtime="20210616 21:59:24.682" starttime="20210616 21:59:24.680"></status>
+</kw>
+<tags>
+<tag>sanity</tag>
+</tags>
+<status status="PASS" endtime="20210616 21:59:24.682" critical="yes" starttime="20210616 21:59:24.666"></status>
+</test>
+<test id="s1-s1-s1-t5" name="FirstSeleniumTest">
+<kw type="setup" name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>I am inside Test Setup</arg>
+</arguments>
+<msg timestamp="20210616 21:59:24.689" level="INFO">I am inside Test Setup</msg>
+<status status="PASS" endtime="20210616 21:59:24.690" starttime="20210616 21:59:24.688"></status>
+</kw>
 <kw name="Open Browser" library="SeleniumLibrary">
 <doc>Opens a new browser instance to the optional ``url``.</doc>
 <arguments>
-<arg>https://google.com/</arg>
+<arg>https://google.com</arg>
 <arg>chrome</arg>
 </arguments>
-<msg timestamp="20210609 15:48:30.420" level="INFO">Opening browser 'chrome' to base url 'https://google.com/'.</msg>
+<msg timestamp="20210616 21:59:24.693" level="INFO">Opening browser 'chrome' to base url 'https://google.com'.</msg>
 <kw name="Capture Page Screenshot" library="SeleniumLibrary">
 <doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<msg timestamp="20210609 15:48:34.401" level="INFO">Cannot capture screenshot because no browser is open.</msg>
-<status status="PASS" endtime="20210609 15:48:34.402" starttime="20210609 15:48:34.398"></status>
+<msg timestamp="20210616 21:59:28.451" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<status status="PASS" endtime="20210616 21:59:28.452" starttime="20210616 21:59:28.446"></status>
 </kw>
-<msg timestamp="20210609 15:48:34.413" level="FAIL">SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 88
+<msg timestamp="20210616 21:59:28.469" level="FAIL">SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 88
 Current browser version is 91.0.4472.77 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
 </msg>
-<status status="FAIL" endtime="20210609 15:48:34.414" starttime="20210609 15:48:30.419"></status>
+<status status="FAIL" endtime="20210616 21:59:28.470" starttime="20210616 21:59:24.691"></status>
 </kw>
-<status status="FAIL" endtime="20210609 15:48:34.417" critical="yes" starttime="20210609 15:48:30.417">SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 88
+<kw type="teardown" name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>I am inside Test Teardown</arg>
+</arguments>
+<msg timestamp="20210616 21:59:28.475" level="INFO">I am inside Test Teardown</msg>
+<status status="PASS" endtime="20210616 21:59:28.477" starttime="20210616 21:59:28.473"></status>
+</kw>
+<tags>
+<tag>sanity</tag>
+</tags>
+<status status="FAIL" endtime="20210616 21:59:28.478" critical="yes" starttime="20210616 21:59:24.684">SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 88
 Current browser version is 91.0.4472.77 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
 </status>
 </test>
-<test id="s1-s1-s1-t3" name="Samplelogintest">
+<test id="s1-s1-s1-t6" name="SampleLoginTest">
+<kw type="setup" name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>I am inside Test Setup</arg>
+</arguments>
+<msg timestamp="20210616 21:59:28.489" level="INFO">I am inside Test Setup</msg>
+<status status="PASS" endtime="20210616 21:59:28.491" starttime="20210616 21:59:28.488"></status>
+</kw>
 <kw name="Open Browser" library="SeleniumLibrary">
 <doc>Opens a new browser instance to the optional ``url``.</doc>
 <arguments>
-<arg>https://opensource-demo.orangehrmlive.com/</arg>
+<arg>${URL}</arg>
 <arg>chrome</arg>
 </arguments>
-<msg timestamp="20210609 15:48:34.427" level="INFO">Opening browser 'chrome' to base url 'https://opensource-demo.orangehrmlive.com/'.</msg>
+<msg timestamp="20210616 21:59:28.497" level="INFO">Opening browser 'chrome' to base url 'https://opensource-demo.orangehrmlive.com/'.</msg>
 <kw name="Capture Page Screenshot" library="SeleniumLibrary">
 <doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<msg timestamp="20210609 15:48:38.179" level="INFO">Cannot capture screenshot because no browser is open.</msg>
-<status status="PASS" endtime="20210609 15:48:38.180" starttime="20210609 15:48:38.174"></status>
+<msg timestamp="20210616 21:59:32.283" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<status status="PASS" endtime="20210616 21:59:32.284" starttime="20210616 21:59:32.279"></status>
 </kw>
-<msg timestamp="20210609 15:48:38.190" level="FAIL">SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 88
+<msg timestamp="20210616 21:59:32.291" level="FAIL">SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 88
 Current browser version is 91.0.4472.77 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
 </msg>
-<status status="FAIL" endtime="20210609 15:48:38.191" starttime="20210609 15:48:34.425"></status>
+<status status="FAIL" endtime="20210616 21:59:32.293" starttime="20210616 21:59:28.494"></status>
 </kw>
-<doc>this a simple login test</doc>
-<status status="FAIL" endtime="20210609 15:48:38.194" critical="yes" starttime="20210609 15:48:34.421">SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 88
+<kw type="teardown" name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>I am inside Test Teardown</arg>
+</arguments>
+<msg timestamp="20210616 21:59:32.298" level="INFO">I am inside Test Teardown</msg>
+<status status="PASS" endtime="20210616 21:59:32.299" starttime="20210616 21:59:32.295"></status>
+</kw>
+<doc>This is a sample login test</doc>
+<tags>
+<tag>sanity</tag>
+</tags>
+<status status="FAIL" endtime="20210616 21:59:32.301" critical="yes" starttime="20210616 21:59:28.483">SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 88
 Current browser version is 91.0.4472.77 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
 </status>
 </test>
-<status status="FAIL" endtime="20210609 15:48:38.200" starttime="20210609 15:48:27.791"></status>
+<kw type="teardown" name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>I am inside Test Suite Teardown</arg>
+</arguments>
+<msg timestamp="20210616 21:59:32.309" level="INFO">I am inside Test Suite Teardown</msg>
+<status status="PASS" endtime="20210616 21:59:32.310" starttime="20210616 21:59:32.307"></status>
+</kw>
+<status status="FAIL" endtime="20210616 21:59:32.311" starttime="20210616 21:59:24.191"></status>
 </suite>
-<status status="FAIL" endtime="20210609 15:48:38.217" starttime="20210609 15:48:27.783"></status>
+<status status="FAIL" endtime="20210616 21:59:32.327" starttime="20210616 21:59:24.185"></status>
 </suite>
-<status status="FAIL" endtime="20210609 15:48:38.233" starttime="20210609 15:48:27.731"></status>
+<status status="FAIL" endtime="20210616 21:59:32.339" starttime="20210616 21:59:24.132"></status>
 </suite>
 <statistics>
 <total>
-<stat fail="2" pass="1">Critical Tests</stat>
-<stat fail="2" pass="1">All Tests</stat>
+<stat fail="2" pass="4">Critical Tests</stat>
+<stat fail="2" pass="4">All Tests</stat>
 </total>
 <tag>
+<stat fail="0" pass="1">example</stat>
+<stat fail="2" pass="2">sanity</stat>
+<stat fail="0" pass="1">smoke</stat>
 </tag>
 <suite>
-<stat fail="2" id="s1" name="RobotProject1" pass="1">RobotProject1</stat>
-<stat fail="2" id="s1-s1" name="Test" pass="1">RobotProject1.Test</stat>
-<stat fail="2" id="s1-s1-s1" name="TestSuite1" pass="1">RobotProject1.Test.TestSuite1</stat>
+<stat fail="2" id="s1" name="RobotProject1" pass="4">RobotProject1</stat>
+<stat fail="2" id="s1-s1" name="Ebay" pass="4">RobotProject1.Ebay</stat>
+<stat fail="2" id="s1-s1-s1" name="Rbay" pass="4">RobotProject1.Ebay.Rbay</stat>
 </suite>
 </statistics>
 <errors>
